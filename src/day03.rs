@@ -18,7 +18,7 @@ macro_rules! trace_wire_v1 {
 	};
 }
 pub fn part1(args: Vec<String>) {
-    println!("--- Day 1: The Tyranny of the Rocket Equation ---");
+    println!("--- Day 3: Crossed Wires ---");
     println!("--- Part 1");
 
     if args.len() != 4 { help!(args); }
@@ -104,7 +104,7 @@ macro_rules! trace_wire_v2 {
 	};
 }
 pub fn part2(args: Vec<String>) {
-    println!("--- Day 1: The Tyranny of the Rocket Equation ---");
+    println!("--- Day 3: Crossed Wires ---");
     println!("--- Part 2");
 
     if args.len() != 4 { help!(args); }
