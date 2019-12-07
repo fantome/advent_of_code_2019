@@ -5,17 +5,20 @@ macro_rules! help {
 		return
 	}}
 }
+macro_rules! header {
+    ($part:expr, $args:expr) => {
+        println!("--- Day 5: Sunny with a Chance of Asteroids ---");
+        println!("--- Part {}", $part);
+        if $args.len() != 4 { help!($args); }
+    };
+}
 
 pub fn part1(args: Vec<String>) {
-    println!("--- Day X: TBD ---");
-    println!("--- Part 1");
-    if args.len() != 4 { help!(args); }
+    header!("1", args);
 
 }
 
 pub fn part2(args: Vec<String>) {
-    println!("--- Day X: TBD ---");
-    println!("--- Part 2");
-    if args.len() != 4 { help!(args); }
+    header!("2", args);
 
 }

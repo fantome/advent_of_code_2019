@@ -1,21 +1,24 @@
 macro_rules! help {
-	($args:expr) => {{
-		println!("{} day part inputs\n\tday\t01..25\n\tpart = 1 or 2", $args[0]);
-		println!("\tinputs: ");
-		return
-	}}
+    ($args:expr) => {{
+        println!("{} day part inputs\n\tday\t01..25\n\tpart = 1 or 2", $args[0]);
+        println!("\tinputs: ");
+        return
+    }}
+}
+macro_rules! header {
+    ($part:expr, $args:expr) => {
+        println!("--- Day X: TBD ---");
+        println!("--- Part {}", $part);
+        if $args.len() != 4 { help!($args); }
+    };
 }
 
 pub fn part1(args: Vec<String>) {
-    println!("--- Day X: TBD ---");
-    println!("--- Part 1");
-    if args.len() != 4 { help!(args); }
+    header!("1", args);
 
 }
 
 pub fn part2(args: Vec<String>) {
-    println!("--- Day X: TBD ---");
-    println!("--- Part 2");
-    if args.len() != 4 { help!(args); }
+    header!("2", args);
 
 }
